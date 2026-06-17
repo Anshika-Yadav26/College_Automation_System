@@ -1,0 +1,119 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 240px;
+    background-color: rgb(63, 161, 164);
+    color: #fff;
+    /* padding: 15px,0px,15px,0px; */
+    position: fixed;
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Add vertical scrollbar */
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #5ec6bc; /* Scrollbar color */
+    border-radius: 10px; /* Rounded corners for scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background-color: #8b98a4; /* Background of the track */
+}
+
+/* .sidebar-header {
+    font-size: 24px;
+    margin-bottom: 30px;
+} */
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+    border-bottom: 2px solid ;
+    border-width: 100%;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    /* font-size: 18px; */
+    display: block;
+    padding: 10px;
+    
+    border-radius: 4px;
+    transition: background 0.3s;
+    /* text-align: center; */
+    font-weight: 500;
+}
+
+.sidebar ul li a:hover {
+    background-color:  #343a40;
+    padding: 10px;
+    
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    font-size: 24px;
+    color: #343a40;
+}
+
+
+
+/* Cards Section */
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 24px;
+    color: #007bff;
+}
+
